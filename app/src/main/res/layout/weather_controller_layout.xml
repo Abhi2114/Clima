@@ -46,7 +46,8 @@
         android:background="@null"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -66,5 +67,82 @@
 
             />
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/leftTVLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/leftTV"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/rightTVLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leftTVLabel"
+        android:layout_alignStart="@+id/leftTVLabel"
+        android:layout_below="@+id/leftTVLabel"
+        android:layout_marginTop="20dp"
+        android:text="@string/rightTV"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/maxTempTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/leftTVLabel"
+        android:layout_alignBottom="@+id/leftTVLabel"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/leftTVLabel"
+        android:layout_toRightOf="@+id/leftTVLabel"
+        android:text="@string/default_temp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/minTempTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rightTVLabel"
+        android:layout_alignBottom="@+id/rightTVLabel"
+        android:layout_alignLeft="@+id/maxTempTV"
+        android:layout_alignStart="@+id/maxTempTV"
+        android:text="@string/default_temp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/humidityTVLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leftTVLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/leftTVLabel"
+        android:text="@string/humidTV"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/humidityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/humidityTVLabel"
+        android:layout_toRightOf="@+id/humidityTVLabel"
+        android:text="@string/default_temp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
 </RelativeLayout>

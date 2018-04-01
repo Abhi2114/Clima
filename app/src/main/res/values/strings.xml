@@ -7,5 +7,7 @@
     <string name="back_button_description">Dismiss Change City Screen</string>
     <string name="get_weather">Change City</string>
     <string name="default_query">Enter city name</string>
-
+    <string name="leftTV">Max -</string>
+    <string name="rightTV">Min -</string>
+    <string name="humidTV">Humidity - </string>
 </resources>
